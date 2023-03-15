@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="../main.css" media="screen" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+<head>
+	<meta charset="utf-8" /> <!-- utf-8 = ascii -->
+	<meta name="description" content="Portfolio for Ryan Harsono" />
+	<meta name="keywords" content="Ryan, Harsono, UC San Diego" />
+	<meta name="author" content="Ryan Harsono" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- responsive scaling -->
+	<title>Ryan's Website</title> <!-- title = tab bar title -->
+</head>
+
+<body>
+	<header>
+		<picture id="pfp">
+			<source media="(max-width:1024px)" srcset="../images/olderhs.jpg">
+			<img id="mainpfp" src="../images/oldhs.jpg" alt="profile photo" />
+		</picture>
+		
+		<h1>Ryan Harsono</h1>
+
+		<nav>
+			<a id="about" href="../index.html">About Me</a>
+			<a id="exp" href="../experience.html">Experience</a>
+			<a id="inte" href="../interests.html">Interests</a>
+			<a id="proj" href="../projects.html">Projects</a>
+			<a id="methodtest" class="active" href="../methodtest/methodtest.html">Method Test</a>
+			<a id="webcomponent" href="../webcomponent/webcomponent.html">Web Component</a>
+		</nav>
+	</header>
+
+	<main>
+		<form>
+			<label for="id">ID: </label>
+			<input type="number" id="id" name="id"><br><br>
+			<label for="article_name">Article Name: </label>
+			<input type="text" id="article_name" name="article_name"><br><br>
+			<label for="article_body">Article Body: </label>
+			<textarea id="article_body" name="article_body"></textarea><br><br>
+			<input type="hidden" id="date" name="date"><br><br>
+			<button id="postBtn" type="button">POST</button>
+			<button id="getBtn" type="button">GET</button>
+			<button id="putBtn" type="button">PUT</button>
+			<button id="deleteBtn" type="button">DELETE</button>
+		</form>
+
+		<output id="response"></output>
+
+		<script src="./main.js" type="module"></script>
+	</main>
+</body>
